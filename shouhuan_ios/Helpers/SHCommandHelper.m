@@ -10,4 +10,27 @@
 
 @implementation SHCommandHelper
 
+// MARK: 执行命令集
++ (void)executeCommands:(NSDictionary *)launchOptions {
+    id command = nil;
+    SHCommandSingleton *commandManager = [SHCommandSingleton sharedInstance];
+    
+    // MARK: Wifi Config
+    //[WIFISetupHelper checkHostCache];
+    
+    // MARK: App Config
+    command = [SHAppLaunchSettingCommand sharedInstance];
+    [commandManager executeCommandWithCommandObject:command];
+    
+ 
+    
+    
+}
+
++ (void)executeCommand:(id)command {
+    SHCommandSingleton *commandManager = [SHCommandSingleton sharedInstance];
+    [commandManager executeCommandWithCommandObject:command];
+}
+
+
 @end

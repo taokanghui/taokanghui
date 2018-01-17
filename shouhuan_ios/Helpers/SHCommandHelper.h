@@ -8,6 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+#import "SHCommandSingleton.h"
+#import "SHAppLaunchSettingCommand.h"
+
 @interface SHCommandHelper : NSObject
+
+// MARK: 命令集执行
++ (void)executeCommands:(NSDictionary *)launchOptions;
+
+// MARK: 单条命令执行
++ (void)executeCommand:(id)command;
+
 
 @end

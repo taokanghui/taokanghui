@@ -7,14 +7,16 @@
 //
 
 #import "SHAppDelegate.h"
-#import "<#header#>"
+#import "SHCommandHelper.h"
+
+
 
 @implementation SHAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     // MARK: Launch Setup
-    [DSCommandHelper executeCommands:launchOptions];
+    [SHCommandHelper executeCommands:launchOptions];
 
     return YES;
 }

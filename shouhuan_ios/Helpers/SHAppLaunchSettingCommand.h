@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SHCommand.h"
 
-@interface SHAppLaunchSettingCommand : NSObject
+@interface SHAppLaunchSettingCommand : NSObject <SHCommand>
+
++ (instancetype)sharedInstance;
 
 @end

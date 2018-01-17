@@ -6,8 +6,5 @@
 //  Copyright © 2018年 hulianxinMac. All rights reserved.
 //
 
-#import "SHCommand.h"
+#import <Foundation/Foundation.h>
 
-@implementation SHCommand
-
-@end

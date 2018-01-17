@@ -10,4 +10,8 @@
 
 @interface SHCommandSingleton : NSObject
 
+
++ (instancetype)sharedInstance;
+- (void)executeCommandWithCommandObject:(id)command;
+
 @end

@@ -7,7 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#pragma mark - 命令集协议
+/**
+ *  命令接口，声明执行的操作
+ */
 
-@interface SHCommand : NSObject
+@protocol SHCommand <NSObject>
+
+/**
+ *  执行命令对应的操作
+ */
+- (void)execute;
 
 @end
+#pragma mark - 命令集常量
