@@ -58,8 +58,8 @@
     self.viewControllers = navArr;
 
     UITabBarItem *item = [UITabBarItem appearance];//正常状态的文字
-    [item setTitleTextAttributes:@{NSForegroundColorAttributeName:kBaseWhiteColor, NSFontAttributeName:[UIFont systemFontOfSize:12]} forState:UIControlStateNormal];
-    [item setTitleTextAttributes:@{NSForegroundColorAttributeName:kBaseWhiteColor, NSFontAttributeName:[UIFont systemFontOfSize:12]} forState:UIControlStateSelected];
+    [item setTitleTextAttributes:@{NSForegroundColorAttributeName:kBaseWhiteColor, NSFontAttributeName:[UIFont boldSystemFontOfSize:14]} forState:UIControlStateNormal];
+    [item setTitleTextAttributes:@{NSForegroundColorAttributeName:kBaseWhiteColor, NSFontAttributeName:[UIFont boldSystemFontOfSize:14]} forState:UIControlStateSelected];
     [self.tabBar setTintColor:kBaseWhiteColor];
     [UITabBar appearance].translucent = NO;
     [UITabBar appearance].backgroundColor = NARCOLOR;

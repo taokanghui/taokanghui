@@ -36,7 +36,7 @@ static CGFloat const startH = 0;
 
 #pragma mark - Private
 - (void)baseInit {
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = COLOR_VIEW_BACKGROUND;
     self.automaticallyAdjustsScrollViewInsets = NO;
     [self.view addSubview:self.km_navigationBar];
     [self.km_navigationBar mas_makeConstraints:^(MASConstraintMaker *make) {
