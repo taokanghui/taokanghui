@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  SHAppDelegate.h
 //  shouhuan_ios
 //
 //  Created by hulianxinMac on 2018/1/17.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
+@interface SHAppDelegate : UIResponder
 
 @end
-
